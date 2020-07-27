@@ -8,24 +8,12 @@
 
 (setq package-enable-at-startup nil)
 
-(tool-bar-mode -1)
-
 (package-refresh-contents)
 (package-install 'use-package)
-(package-install 'hydra)
-(package-install 'company)
-(use-package company
-  :ensure t)
 
-(use-package emr
-  :ensure t)
-(define-key prog-mode-map (kbd "M-RET") 'emr-show-refactor-menu)
-
-(cua-mode t)
-
-(setq-default frame-title-format '("%F"))
+(setq lexical-binding t)
 (load "~/.emacs.d/config/config.el")
-
+(config-reload-all)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -41,114 +29,3 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
